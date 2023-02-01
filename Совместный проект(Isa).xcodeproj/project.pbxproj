@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		F4EF13F12938BB3E0010668E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF13F02938BB3E0010668E /* AppDelegate.swift */; };
 		F4EF13F32938BB3E0010668E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF13F22938BB3E0010668E /* SceneDelegate.swift */; };
-		F4EF13F52938BB3E0010668E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF13F42938BB3E0010668E /* ViewController.swift */; };
+		F4EF13F52938BB3E0010668E /* ShoppingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF13F42938BB3E0010668E /* ShoppingListController.swift */; };
 		F4EF13F82938BB3E0010668E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EF13F62938BB3E0010668E /* Main.storyboard */; };
 		F4EF13FA2938BB430010668E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EF13F92938BB430010668E /* Assets.xcassets */; };
 		F4EF13FD2938BB430010668E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EF13FB2938BB430010668E /* LaunchScreen.storyboard */; };
+		F4EF14092938BB9B0010668E /* ShoppingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF14082938BB9B0010668E /* ShoppingFile.swift */; };
+		F4EF140C2938BBCE0010668E /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF140B2938BBCE0010668E /* DataStore.swift */; };
+		F4EF140E2938D2DF0010668E /* ShoppingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF140D2938D2DF0010668E /* ShoppingViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4EF13ED2938BB3E0010668E /* Совместный проект(Isa).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Совместный проект(Isa).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EF13F02938BB3E0010668E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4EF13F22938BB3E0010668E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4EF13F42938BB3E0010668E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4EF13F42938BB3E0010668E /* ShoppingListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListController.swift; sourceTree = "<group>"; };
 		F4EF13F72938BB3E0010668E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4EF13F92938BB430010668E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4EF13FC2938BB430010668E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4EF13FE2938BB430010668E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4EF14082938BB9B0010668E /* ShoppingFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingFile.swift; sourceTree = "<group>"; };
+		F4EF140B2938BBCE0010668E /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		F4EF140D2938D2DF0010668E /* ShoppingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		F4EF13EF2938BB3E0010668E /* Совместный проект(Isa) */ = {
 			isa = PBXGroup;
 			children = (
-				F4EF13F02938BB3E0010668E /* AppDelegate.swift */,
-				F4EF13F22938BB3E0010668E /* SceneDelegate.swift */,
-				F4EF13F42938BB3E0010668E /* ViewController.swift */,
-				F4EF13F62938BB3E0010668E /* Main.storyboard */,
-				F4EF13F92938BB430010668E /* Assets.xcassets */,
-				F4EF13FB2938BB430010668E /* LaunchScreen.storyboard */,
+				F4EF140A2938BBBF0010668E /* DataStore */,
+				F4EF14072938BB870010668E /* Models */,
+				F4EF14062938BB730010668E /* ViewControllers */,
+				F4EF14042938BB560010668E /* SupportFiles */,
+				F4EF14052938BB670010668E /* Storyboards */,
 				F4EF13FE2938BB430010668E /* Info.plist */,
 			);
 			path = "Совместный проект(Isa)";
+			sourceTree = "<group>";
+		};
+		F4EF14042938BB560010668E /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F4EF13F02938BB3E0010668E /* AppDelegate.swift */,
+				F4EF13F22938BB3E0010668E /* SceneDelegate.swift */,
+				F4EF13F92938BB430010668E /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		F4EF14052938BB670010668E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F4EF13F62938BB3E0010668E /* Main.storyboard */,
+				F4EF13FB2938BB430010668E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F4EF14062938BB730010668E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4EF13F42938BB3E0010668E /* ShoppingListController.swift */,
+				F4EF140D2938D2DF0010668E /* ShoppingViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F4EF14072938BB870010668E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4EF14082938BB9B0010668E /* ShoppingFile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4EF140A2938BBBF0010668E /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				F4EF140B2938BBCE0010668E /* DataStore.swift */,
+			);
+			path = DataStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4EF13F52938BB3E0010668E /* ViewController.swift in Sources */,
+				F4EF13F52938BB3E0010668E /* ShoppingListController.swift in Sources */,
+				F4EF14092938BB9B0010668E /* ShoppingFile.swift in Sources */,
 				F4EF13F12938BB3E0010668E /* AppDelegate.swift in Sources */,
+				F4EF140C2938BBCE0010668E /* DataStore.swift in Sources */,
+				F4EF140E2938D2DF0010668E /* ShoppingViewCell.swift in Sources */,
 				F4EF13F32938BB3E0010668E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
