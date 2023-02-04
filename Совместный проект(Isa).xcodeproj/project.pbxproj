@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AADB574298A66540033188E /* GroceryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AADB573298A66540033188E /* GroceryListController.swift */; };
+		4AADB576298A667C0033188E /* GroceryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AADB575298A667C0033188E /* GroceryViewCell.swift */; };
 		F4EF13F12938BB3E0010668E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF13F02938BB3E0010668E /* AppDelegate.swift */; };
 		F4EF13F32938BB3E0010668E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF13F22938BB3E0010668E /* SceneDelegate.swift */; };
 		F4EF13F52938BB3E0010668E /* ShoppingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF13F42938BB3E0010668E /* ShoppingListController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AADB573298A66540033188E /* GroceryListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListController.swift; sourceTree = SOURCE_ROOT; };
+		4AADB575298A667C0033188E /* GroceryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroceryViewCell.swift; path = "Совместный проект(Isa)/Storyboards/GroceryViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		F4EF13ED2938BB3E0010668E /* Совместный проект(Isa).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Совместный проект(Isa).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EF13F02938BB3E0010668E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4EF13F22938BB3E0010668E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 		F4EF14062938BB730010668E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4AADB575298A667C0033188E /* GroceryViewCell.swift */,
+				4AADB573298A66540033188E /* GroceryListController.swift */,
 				F4EF13F42938BB3E0010668E /* ShoppingListController.swift */,
 				F4EF140D2938D2DF0010668E /* ShoppingViewCell.swift */,
 			);
@@ -191,7 +197,9 @@
 				F4EF14092938BB9B0010668E /* ShoppingFile.swift in Sources */,
 				F4EF13F12938BB3E0010668E /* AppDelegate.swift in Sources */,
 				F4EF140C2938BBCE0010668E /* DataStore.swift in Sources */,
+				4AADB574298A66540033188E /* GroceryListController.swift in Sources */,
 				F4EF140E2938D2DF0010668E /* ShoppingViewCell.swift in Sources */,
+				4AADB576298A667C0033188E /* GroceryViewCell.swift in Sources */,
 				F4EF13F32938BB3E0010668E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
